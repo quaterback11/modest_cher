@@ -57,12 +57,19 @@ body {
 .navigation .active a:hover {
   border: 2px solid #23b7a4;
 }
+.gallery-wrapper img {
+  display: block;
+  width: 100%;
+  height: 660px;
+}
 .gallery-wrapper {
   width: 100%;
   height: 660px;
-  background: url(../images/gallery-wrapper-1.jpg);
+  position: relative;
 }
 .info-market {
+  position: absolute;
+  bottom: 0;
   width: 1140px;
   height: 660px;
   margin: auto;
@@ -71,6 +78,7 @@ body {
 }
 .market-text {
   width: 650px;
+  margin: auto;
 }
 .market-text h1 {
   font-size: 36px;
@@ -103,4 +111,33 @@ body {
   border: 2px solid #23b7a4;
   border-radius: 4px;
   margin-right: 11px;
+}
+.splide__arrows {
+  display: none;
+}
+.splide__pagination {
+  display: inline-flex;
+  align-items: center;
+  width: 95%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.splide__pagination__page {
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+  background: none;
+}
+.is-active {
+  background: #ffff;
+}
+.splide__pagination li {
+  display: block;
+  margin: 0px 0px 30px 10px;
+  cursor: pointer;
 }
