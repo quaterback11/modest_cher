@@ -60,7 +60,7 @@ body {
 }
 .gallery-wrapper img {
   display: block;
-  width: 100%;
+  width: fit-content;
   height: 660px;
 }
 .gallery-wrapper {
@@ -68,6 +68,10 @@ body {
   height: 660px;
   position: relative;
 }
+/* .gallery-wrapper li {
+  height: 660px;
+  overflow: hidden;
+} */
 .info-market {
   position: absolute;
   bottom: 0;
@@ -128,7 +132,6 @@ body {
   margin: 0px;
   position: absolute;
   bottom: 0;
-  cursor: pointer;
 }
 .splide__pagination__page {
   width: 14px;
@@ -136,6 +139,7 @@ body {
   border-radius: 50%;
   border: 2px solid #ffff;
   background: none;
+  cursor: pointer;
 }
 .is-active {
   background: #ffff;
