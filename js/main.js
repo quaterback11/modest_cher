@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     new Splide(".splide", {
-        autoplay: false,
+        autoplay: true,
         interval: 4000,
         type: "loop",
     }).mount();
